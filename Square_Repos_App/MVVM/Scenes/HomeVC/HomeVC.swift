@@ -48,7 +48,7 @@ class HomeVC: UIViewController {
         homeViewModel?.reposWillSet.bind{
             [weak self] isShowActivityView in
             guard let strongSelf = self else{return}
-            strongSelf.showActivityView(isShow: true)
+            strongSelf.showActivityView(isShow: isShowActivityView)
         }
     }
     

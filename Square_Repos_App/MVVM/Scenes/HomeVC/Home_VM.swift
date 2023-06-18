@@ -65,7 +65,6 @@ final class HomeList_VM {
                 guard let response = value else {
                     dispatchGroup.leave()
                     return }
-//                strongSelf.allRepositories = response
                 strongSelf.separateReposContainer.repositories = response
                 strongSelf.separateReposContainer.totalCount = response.count
                 dispatchGroup.leave()

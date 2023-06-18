@@ -9,6 +9,7 @@ import UIKit
 import NVActivityIndicatorView
 
 extension UIViewController:NVActivityIndicatorViewable{
+    
     func set_Blur(containerView : UIView) {
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
